@@ -1,0 +1,130 @@
+/* OurBlog */
+.our-blogs-container {
+  padding-top: 2.5rem;
+}
+
+.our-blogs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-blogs-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .our-blogs-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .our-blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .our-blogs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.our-blog-btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Blog Btn */
+
+.our-blog-btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.our-blog-btn {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 62, 62),
+    #d52a2a,
+    #c50000
+  );
+  color: #fff;
+  font-weight: 500;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-image 0.3s ease;
+}
+
+.our-blog-btn:hover,
+.our-blog-btn:focus {
+  background-image: radial-gradient(circle, rgb(255, 62, 62), #d52a2a, #c50000);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5);
+}
+
+/* Our blog cart */
+
+/* OurBlog.css */
+.our-blog-cart-container {
+  max-width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.our-blog-cart-image {
+  width: 100%;
+  height: 12rem; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.our-blog-cart-content {
+  padding: 1rem;
+  position: relative;
+}
+
+.our-blog-cart-content p:nth-child(3) {
+  color: black;
+}
+
+.our-blog-cart-date {
+  position: absolute;
+  top: -50px;
+  right: 15px;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.our-blog-cart-date span {
+  display: block;
+  text-align: center;
+  padding: 3px 5px;
+}
+
+.our-blog-cart-date span:nth-child(1) {
+  background-color: rgb(181, 7, 7);
+}
+.our-blog-cart-date span:nth-child(2) {
+  background-color: rgb(181, 7, 7);
+}
+.our-blog-cart-date span:nth-child(3) {
+  background-color: #000;
+}
+
+.our-blog-cart-title {
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.our-blog-cart-description {
+  color: #718096;
+}

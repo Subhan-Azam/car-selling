@@ -1,0 +1,137 @@
+/* DreamCar */
+
+.DreamCar {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.DreamCar .grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.DreamCar .grid-cols-2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.DreamCar .sm-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.DreamCar .md-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.DreamCar .lg-grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .DreamCar .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 640px) {
+  .DreamCar .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .DreamCar .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .DreamCar .grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+/* Dream Heading */
+
+.text-center {
+  text-align: center;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem; /* 6 x 0.25rem (base unit) */
+}
+
+.heading-title {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: bold; /* Equivalent to font-bold */
+}
+
+.heading-subtitle {
+  font-size: 1rem; /* Equivalent to text-md */
+}
+
+/* Dream Car Links */
+.DreamCarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+  border-bottom: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+  padding-top: 0.75rem; /* 3 x 0.25rem (base unit) */
+  padding-bottom: 0.75rem; /* 3 x 0.25rem (base unit) */
+  margin-bottom: 1.5rem; /* 6 x 0.25rem (base unit) */
+}
+
+.DreamCarLinks .buttons {
+  display: flex;
+  gap: 1rem; /* Equivalent to space-x-4 */
+}
+
+.DreamCarLinks .button {
+  font-size: 1rem; /* Add a base font size if necessary */
+}
+
+.DreamCarLinks .buttons .primary {
+  color: #b91c1c; /* Equivalent to text-red-700 */
+}
+
+.DreamCarLinks .buttons .muted {
+  color: #6b7280; /* Equivalent to text-muted-foreground */
+}
+
+.view-more {
+  color: #6b7280; /* Equivalent to text-muted-foreground */
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.25rem; /* Equivalent to w-5 */
+  margin-left: 0.5rem; /* Equivalent to ml-2 */
+}
+
+/* Dream Car Cart */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #6b7280; /* Equivalent to border-gray-500 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  height: 11rem; /* Equivalent to h-44 */
+  padding: 1rem; /* Equivalent to p-4 */
+  text-align: center;
+  margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+}
+
+.cart-item .cart-image {
+  margin: 0 auto;
+  width: 3.5rem; /* Equivalent to w-14 */
+  margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+}
+
+.cart-item .text-muted {
+  color: #6b7280; /* Equivalent to text-muted-foreground */
+}
