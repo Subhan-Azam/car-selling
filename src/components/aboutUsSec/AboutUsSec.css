@@ -1,0 +1,71 @@
+/* aboutUsSec */
+.aboutUsSec {
+  /* background-image: linear-gradient(to right, #ff0000, #ff4500); */
+  background-color: rgb(153, 12, 12);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.aboutUsSec {
+  background-image: url('/assets/images/hero-back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.aboutUsSec::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.aboutUsSecChild {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* AboutUsSecCart */
+.AboutUsSecCart {
+  width: 100%;
+  width: 50%;
+  width: 25%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.AboutUsSecCart .imgDiv {
+  background-color: #ffffff; /* Replace with your desired background color */
+  border-radius: 9999px; /* Large enough to make it appear as a circle */
+  margin-left: auto;
+  margin-right: auto;
+  width: 4rem; /* Adjust size as needed */
+  height: 4rem; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.AboutUsSecCart h3 {
+  color: #ffffff; /* Adjust text color as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
